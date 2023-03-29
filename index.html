@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <img class="header-logo" src="./images/logo.png" alt="Logo">
+                    <div class="header-search">
+                        <input class="header-search" type="search" placeholder="Tìm kiếm...">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="header-link">
+                        <div class="header-nav">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <a href="#">Giỏ Hàng</a>
+                        </div>
+                        <div class="header-nav">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <a href="#">Tài Khoản</a>
+                        </div>
+                        <div class="header-mobile">
+                            <div class="header-mobile-menu">
+                                <label for="check" class="header-mobile-check">
+                                    <i class="fas fa-bars"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar">
+                <div class="container">
+                    <div class="header-bottom">
+                        <div class="header-cate">
+                            <div>
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Danh Mục Sản Phẩm</span>
+                            </div>
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="header-bottom-link">
+                            <li style="font-weight: 700;"><a href="#" class="header-bottom-nav">Trang
+                                    chủ</a></li>
+                            <li><a href="#" class="header-bottom-nav">Giới thiệu</a></li>
+                            <li><a href="#" class="header-bottom-nav">Tin tức</a></li>
+                            <li><a href="#" class="header-bottom-nav">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="deal">
+                <div class="container">
+                    <div class="deal-img">
+                        <a href="#"><img src="./images/deal-1.png" alt=""></a>
+                        <div class="deal-column">
+                            <a href="#"><img src="./images/deal-2.png" alt=""></a>
+                            <a href="#"><img src="./images/deal-3.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="policy">
+                <div class="container">
+                    <div class="policy-scroll">
+                        <div class="policy-list">
+                            <div class="policy-item">
+                                <img src="./images/1.png" alt="Shipping">
+                                <div>
+                                    <h4>GIAO HÀNG TOÀN QUỐC</h4>
+                                    <p>Mua tại chỗ hàng đến liền tay</p>
+                                </div>
+                            </div>
+                            <div class="policy-item">
+                                <img src="./images/2.png" alt="Shipping">
+                                <div>
+                                    <h4>GIAO HÀNG TOÀN QUỐC</h4>
+                                    <p>Mua tại chỗ hàng đến liền tay</p>
+                                </div>
+                            </div>
+                            <div class="policy-item">
+                                <img src="./images/3.png" alt="Shipping">
+                                <div>
+                                    <h4>GIAO HÀNG TOÀN QUỐC</h4>
+                                    <p>Mua tại chỗ hàng đến liền tay</p>
+                                </div>
+                            </div>
+                            <div class="policy-item">
+                                <img src="./images/4.png" alt="Shipping">
+                                <div>
+                                    <h4>GIAO HÀNG TOÀN QUỐC</h4>
+                                    <p>Mua tại chỗ hàng đến liền tay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/uudai.png" alt="">
+                            <h4>ƯU ĐÃI GIỚI HẠN</h4>
+                        </div>
+
+                        <div class="card-list">
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card-item">
+                                <div>
+                                    <img src="./images/a.png" class="card-img-top" alt="...">
+                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="card-price">
+                                            <span>130,000 đ</span>
+                                            <div class="card-discount">
+                                                <span>150,000 đ</span>
+                                                <p>-13%</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="category">
+                <div class="container">
+                    <div class="category-scroll">
+                        <div class="category-list">
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/Group.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                            <div class="category-item">
+                                <img src="./images/ic_sharp-more-horiz.png" alt="">
+                                <p>Danh mục SP 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature">
+                <div class="container">
+                    <div class="feature-header">
+                        <div class="feature-heading">
+                            <span>NEW</span>
+                            <h4>SẢN PHẨM MỚI CẬP NHẬT</h4>
+                        </div>
+                        <div class="feature-all">
+                            <a href="#" style="display:flex;gap: 8px;text-decoration: none;color: #5C5C5C;">
+                                <i class="fa-solid fa-angles-right"></i>
+                                <p>Xem tất cả</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature-list">
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature-list">
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature-list">
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-item">
+                            <div>
+                                <img src="./images/a.png" class="feature-img-top" alt="...">
+                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
+                                </h5>
+                                <div class="feature-body">
+                                    <div class="feature-price">
+                                        <span>130,000 đ</span>
+                                        <div class="feature-discount">
+                                            <span>150,000 đ</span>
+                                            <p>-13%</p>
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ads">
+                <div class="container">
+                    <div class="ads-images">
+                        <a href="#"><img src="./images/div.png" alt=""></a>
+                        <a href="#"><img src="./images/div1.png" alt=""></a>
+                        <a href="#"><img src="./images/div2.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="container">
+                    <div class="news-header">
+                        <div class="news-heading">
+                            <img src="./images/news.png" alt="">
+                            <h4>TIN TỨC CẬP NHẬT</h4>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <a href="#">
+                            <div class="news-item">
+                                <img src="./images/Ke_thay_doi_cuoc_choi_ve_camera-500x350.png.png" alt="">
+                                <div class="news-card">
+                                    <h4>Chào mừng đến với trang web, hãy trải nghiệm và góp ý nhé</h4>
+                                    <div class="news-about">
+                                        <span>
+                                            <img src="./images/eye.png" alt="">
+                                            <p>165</p>
+                                        </span>
+                                        <span>
+                                            <img src="./images/date.png" alt="">
+                                            <p>01/01/2023</p>
+                                        </span>
+                                    </div>
+                                    <p class="news-desc">
+                                        Chào mừng đến với trang web, hãy trải nghiệm và góp ý nhé với chúng tôi.
+                                        Lorem Ipsum is simply dummy text of the printing and in Lorem Ipsum is
+                                        simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen [...]
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="news-mobile">
+                            <div class="news-2-item">
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="news-2-item">
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="news-item-child">
+                                        <img class="news-2-item-img"
+                                            src="./images/Airpod3_san_xuat_tai_Viet_Nam-500x350.png.png" alt="">
+                                        <div class="news-2-card">
+                                            <h5 class="news-title">
+                                                Chào mừng đến với trang web, hãy trải nghiệm Chào mừng đến với trang
+                                                web, hãy trải nghiệm Chào mừng đến với trang web, hãy trải nghiệm
+                                            </h5>
+                                            <div class="news-about">
+                                                <span>
+                                                    <img src="./images/eye.png" alt="">
+                                                    <p>165</p>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/date.png" alt="">
+                                                    <p>01/01/2023</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonial">
+                <div class="container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-heading">PHẢN HỒI NGƯỜI DÙNG</h4>
+                        </div>
+
+                        <div class="testimonial-mobile">
+                            <div class="testimonial-list">
+                                <div class="testimonial-user">
+                                    <div class="testimonial-top">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="testimonial-info">
+                                            <h4 class="testimonial-name">NGUYỄN VĂN A</h4>
+                                            <p>Khách hàng</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-desc">
+                                        Sản phẩm chất lượng, giao hàng nhanh, sẽ quay lại ủng hộ shop trong thời gian
+                                        tới.
+                                    </p>
+                                </div>
+
+                                <div class="testimonial-user">
+                                    <div class="testimonial-top">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="testimonial-info">
+                                            <h4 class="testimonial-name">NGUYỄN VĂN A</h4>
+                                            <p>Khách hàng</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-desc">
+                                        Sản phẩm chất lượng, giao hàng nhanh, sẽ quay lại ủng hộ shop trong thời gian
+                                        tới.
+                                    </p>
+                                </div>
+
+                                <div class="testimonial-user">
+                                    <div class="testimonial-top">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="testimonial-info">
+                                            <h4 class="testimonial-name">NGUYỄN VĂN A</h4>
+                                            <p>Khách hàng</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-desc">
+                                        Sản phẩm chất lượng, giao hàng nhanh, sẽ quay lại ủng hộ shop trong thời gian
+                                        tới.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="button">
+                <div class="container">
+                    <input type="checkbox" name="" id="btnCate">
+                    <label for="btnCate" class="button-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+            </section>
+
+            <section class="navbar-mobile js-navbar">
+                <div class="container">
+                    <div class="navbar-mobile-content js-navbar-container">
+                        <div class="navbar-mobile-search">
+                            <input type="search" class="" name="" id="" placeholder="Tìm kiếm ... ">
+                        </div>
+                        <ul class="navbar-mobile-list">
+                            <li><a href="#" class="navbar-mobile-link">Trang chủ</a></li>
+                            <li><a href="#" class="navbar-mobile-link">Giới thiệu</a></li>
+                            <li><a href="#" class="navbar-mobile-link">Tin tức</a></li>
+                            <li><a href="#" class="navbar-mobile-link">Liên hệ</a></li>
+                            <li><a href="#" class="navbar-mobile-link">Biti Mart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="modal js-modal">
+                <div class="container">
+                    <div class="modal-cate js-modal-container">
+                        <div class="modal-nav">
+                            <h4 class="modal-heading">Danh mục sản phẩm</h4>
+                            <ul class="modal-list">
+                                <li><a href="#" class="modal-link">Lọc nước</a></li>
+                                <li><a href="#" class="modal-link">Robot hút bụi</a></li>
+                                <li><a href="#" class="modal-link">Đồ gia dụng</a></li>
+                                <li><a href="#" class="modal-link">Thiết bị nhà bếp</a></li>
+                                <li><a href="#" class="modal-link">Thực phẩm sức khoẻ</a></li>
+                                <li><a href="#" class="modal-link">Đồ gia dụng</a></li>
+                                <li><a href="#" class="modal-link">Thiết bị nhà bếp</a></li>
+                                <li><a href="#" class="modal-link">Thực phẩm sức khoẻ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-body">
+                    <div class="footer-top">
+                        <ul>
+                            <h4>Cửa hàng</h4>
+                            <li><i class="fa-solid fa-map-location-dot"></i>Xem bản đồ đường đi</li>
+                            <li><i class="fa-solid fa-phone"></i>Điện thoại: 0123456789</li>
+                            <li><i class="fa-solid fa-location-dot"></i>Địa chỉ: 156 Mẹ Thứ, Hòa Xuân, Cẩm
+                                Lệ,
+                                Đà Nẵng</li>
+                            <li><i class="fa-solid fa-envelope"></i>Email: Trannhattoan@biti.vn</li>
+                            <li><i class="fa-solid fa-clock"></i>Giờ mở cửa: Các ngày trong tuần 8h00 -
+                                22h00</li>
+                        </ul>
+                        <ul>
+                            <h4>Tổng đài hỗ trợ</h4>
+                            <li>Gọi mua: 0123456789 (8:00 - 22:00)</li>
+                            <li>Kỹ thuật: 0123456789 (8:00 - 22:00)</li>
+                            <li>Khiếu nại: 0123456789 (8:00 - 22:00)</li>
+                            <div class="footer-socials">
+                                <a href="#" class="footer-socials-link"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="footer-socials-link"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" class="footer-socials-link"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#" class="footer-socials-link"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <h4>Thông tin</h4>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Chính sách khiếu nại</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            <li><a href="#">Điều khoản & Điều kiện</a></li>
+                        </ul>
+                        <ul>
+                            <h4>Kết nối với chúng tôi</h4>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-line"></div>
+                    <div class="footer-bottom">
+                        <p class="footer-desc">© Copyright AFA. All rights reserved | Design by BITI HIGHTECH</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
