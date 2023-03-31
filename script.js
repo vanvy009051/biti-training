@@ -31,6 +31,17 @@ const mediaQuery = window.matchMedia('(min-width: 968px)')
         });
 }
 
+const mediaQuery4 = window.matchMedia('(min-width: 968px)')
+    if (mediaQuery4.matches) {
+        $(document).ready(function(){
+            $('.testimonial-list').slick({
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                arrows: false,
+            });
+        });
+    }
+
 const buttonBars = document.querySelector('.button-bar');
 const modal = document.querySelector('.modal');
 const jsModal = document.querySelector('.js-modal');
@@ -68,3 +79,16 @@ jsNavbar.addEventListener('click', hideNavbarMobile)
 navbarContainer.addEventListener('click', function(e) {
     e.stopPropagation()
 })
+
+let count = 0;
+$('.feature-cart').click(function (){
+    count ++;
+    $('#counter').html(count)
+    alert('Thêm vào giỏ hàng thành công');
+});
+
+$('.card-cart').click(function (){
+    count ++;
+    $('#counter').html(count)
+    alert('Thêm vào giỏ hàng thành công');
+});

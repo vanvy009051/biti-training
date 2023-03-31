@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -29,8 +31,11 @@
                     </div>
                     <div class="header-link">
                         <div class="header-nav">
-                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                            <a href="#">Giỏ Hàng</a>
+                            <div class="header-cart">
+                                <span id="counter" class="header-cart-count">0</span>
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <a href="#">Giỏ hàng</a>
                         </div>
                         <div class="header-nav">
                             <i class="fa-solid fa-circle-user"></i>
@@ -50,14 +55,25 @@
                 <div class="container">
                     <div class="header-bottom">
                         <div class="header-cate">
-                            <div>
+                            <div class="header-cate-heading">
                                 <i class="fa-solid fa-bars"></i>
                                 <span>Danh Mục Sản Phẩm</span>
                             </div>
-                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                            <div class="header-cate__all">
+                                <ul class="header-child">
+                                    <li><a href="#" class="header-child__link">Lọc Nước</a></li>
+                                    <li><a href="#" class="header-child__link">Hút Bụi</a></li>
+                                    <li><a href="#" class="header-child__link">Đồ Dùng Gia Dụng</a></li>
+                                    <li><a href="#" class="header-child__link">Ngũ Cốc</a></li>
+                                    <li><a href="#" class="header-child__link">Thiết Bị Nhà Bếp</a></li>
+                                    <li><a href="#" class="header-child__link">Đồ Dùng Gia Dụng</a></li>
+                                    <li><a href="#" class="header-child__link">Ngũ Cốc</a></li>
+                                    <li><a href="#" class="header-child__link">Thiết Bị Nhà Bếp</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <ul class="header-bottom-link">
-                            <li style="font-weight: 700;"><a href="#" class="header-bottom-nav">Trang
+                            <li><a href="#" class="header-bottom-nav active">Trang
                                     chủ</a></li>
                             <li><a href="#" class="header-bottom-nav">Giới thiệu</a></li>
                             <li><a href="#" class="header-bottom-nav">Tin tức</a></li>
@@ -125,111 +141,154 @@
                             <h4>ƯU ĐÃI GIỚI HẠN</h4>
                         </div>
 
-                        <div class="card-list">
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                        <div class="container">
+                            <div class="card-list row">
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="card-item">
-                                <div>
-                                    <img src="./images/a.png" class="card-img-top" alt="...">
-                                    <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                    </h5>
-                                    <div class="card-body">
-                                        <div class="card-price">
-                                            <span>130,000 đ</span>
-                                            <div class="card-discount">
-                                                <span>150,000 đ</span>
-                                                <p>-13%</p>
+                                <div class="card-item col-12 col">
+                                    <div class="card-img">
+                                        <a href="#" class="card-link"><img src="./images/pro-2.png" class="card-img-top"
+                                                alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="card-link">
+                                            <h5 class="card-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="card-price">
+                                                <span>130,000 đ</span>
+                                                <div class="card-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
                                             </div>
+                                            <button href="#" class="card-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -286,215 +345,205 @@
                         </div>
                     </div>
 
-                    <div class="feature-list">
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                    <div class="container">
+                        <div class="feature-product">
+                            <div class="feature-list row">
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="feature-list">
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                            <div class="feature-list row">
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
+                                <div class="feature-item col">
+                                    <div class="feature-img">
+                                        <a href="#" class="feature-link"><img src="./images/pro-2.png"
+                                                class="feature-img-top" alt="..."></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="feature-link">
+                                            <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao
+                                                ....
+                                            </h5>
+                                        </a>
+                                        <div class="feature-body">
+                                            <div class="feature-price">
+                                                <span>130,000 đ</span>
+                                                <div class="feature-discount">
+                                                    <span>150,000 đ</span>
+                                                    <p>-13%</p>
+                                                </div>
+                                            </div>
+                                            <button href="#" class="feature-cart"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="feature-list">
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
-                                        </div>
-                                    </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
-                                        </div>
-                                    </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
-                                        </div>
-                                    </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="feature-item">
-                            <div>
-                                <img src="./images/a.png" class="feature-img-top" alt="...">
-                                <h5 class="feature-title">Mèo Thần Tài Vẫy Tay Phát Tài Phát Lộc Gốm Sứ Cao ....
-                                </h5>
-                                <div class="feature-body">
-                                    <div class="feature-price">
-                                        <span>130,000 đ</span>
-                                        <div class="feature-discount">
-                                            <span>150,000 đ</span>
-                                            <p>-13%</p>
-                                        </div>
-                                    </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -694,9 +743,9 @@
                             <h4 class="testimonial-heading">PHẢN HỒI NGƯỜI DÙNG</h4>
                         </div>
 
-                        <div class="testimonial-mobile">
-                            <div class="testimonial-list">
-                                <div class="testimonial-user">
+                        <div class="container">
+                            <div class="testimonial-list row">
+                                <div class="testimonial-user col-4">
                                     <div class="testimonial-top">
                                         <img src="./images/user.png" alt="">
                                         <div class="testimonial-info">
@@ -709,8 +758,7 @@
                                         tới.
                                     </p>
                                 </div>
-
-                                <div class="testimonial-user">
+                                <div class="testimonial-user col-4">
                                     <div class="testimonial-top">
                                         <img src="./images/user.png" alt="">
                                         <div class="testimonial-info">
@@ -723,8 +771,33 @@
                                         tới.
                                     </p>
                                 </div>
-
-                                <div class="testimonial-user">
+                                <div class="testimonial-user col-4">
+                                    <div class="testimonial-top">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="testimonial-info">
+                                            <h4 class="testimonial-name">NGUYỄN VĂN A</h4>
+                                            <p>Khách hàng</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-desc">
+                                        Sản phẩm chất lượng, giao hàng nhanh, sẽ quay lại ủng hộ shop trong thời gian
+                                        tới.
+                                    </p>
+                                </div>
+                                <div class="testimonial-user col-4">
+                                    <div class="testimonial-top">
+                                        <img src="./images/user.png" alt="">
+                                        <div class="testimonial-info">
+                                            <h4 class="testimonial-name">NGUYỄN VĂN A</h4>
+                                            <p>Khách hàng</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-desc">
+                                        Sản phẩm chất lượng, giao hàng nhanh, sẽ quay lại ủng hộ shop trong thời gian
+                                        tới.
+                                    </p>
+                                </div>
+                                <div class="testimonial-user col-4">
                                     <div class="testimonial-top">
                                         <img src="./images/user.png" alt="">
                                         <div class="testimonial-info">
@@ -842,10 +915,12 @@
             </div>
         </footer>
         </div>
+        <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="./script.js"></script>
 </body>
 
